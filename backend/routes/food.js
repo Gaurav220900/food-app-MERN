@@ -1,5 +1,4 @@
 const express = require("express");
-const food = require("../src/models/food");
 const router = express.Router();
 const foodModel = require("../src/models/food");
 
@@ -42,3 +41,5 @@ router.get("/foods", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+module.exports = router;
